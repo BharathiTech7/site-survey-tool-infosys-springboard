@@ -1,0 +1,226 @@
+✅ FIRST: Is this Milestone 2 DIFFERENT from what we discussed earlier?
+
+👉 YES, slightly different focus
+👉 But your Milestone 1 foundation perfectly supports this Milestone 2
+
+Earlier we spoke generally about domain data.
+This Milestone 2 is specifically about:
+
+Floor plans + file uploads + bulk import + basic hierarchy APIs
+
+That’s totally fine and very realistic.
+
+🎯 Milestone 2 – IN SIMPLE WORDS
+
+After login, users should be able to
+upload site plans and import large data instead of entering everything manually.
+
+Think like this:
+
+Not drawing floor plans yet
+
+Just uploading & managing files and data
+
+📦 DELIVERABLE-BY-DELIVERABLE EXPLANATION (ORAL, CLEAR)
+1️⃣ Floor plan upload (Web & Mobile)
+
+What this means:
+
+User uploads PDF / image of building or floor plan
+
+File is stored
+
+Metadata is saved in DB
+
+👉 No editing, just upload & view.
+
+2️⃣ Image processing & file service (S3 / MinIO)
+
+Meaning:
+
+Files should NOT be stored inside your project folder
+
+They go to:
+
+Cloud storage (S3) OR
+
+Local object storage (MinIO)
+
+👉 For internship:
+
+MinIO is PERFECT (looks professional, works locally)
+
+3️⃣ Bulk space import (CSV / XLSX)
+
+Meaning:
+
+User uploads Excel/CSV file
+
+File contains:
+
+Space name
+
+Type
+
+Area
+
+Floor reference
+
+System should:
+
+Validate file
+
+Read rows
+
+Prepare data
+
+👉 No DB insert immediately (important).
+
+4️⃣ Campus / Building / Floor hierarchy UI
+
+Meaning:
+
+Simple UI to:
+
+Select property
+
+Select building
+
+Select floor
+
+👉 No fancy design
+👉 Just dropdowns / tree view
+
+5️⃣ Basic REST APIs
+
+Required APIs:
+
+Create / list properties
+
+Create / list buildings
+
+Create / list floors
+
+Create / list spaces
+
+👉 Pure CRUD
+👉 JWT-protected
+
+6️⃣ Preview & confirmation workflow
+
+Very important concept:
+
+Flow:
+
+Upload CSV
+
+Show preview table
+
+User clicks Confirm
+
+THEN save to DB
+
+👉 This avoids bad data.
+
+7️⃣ Integration testing
+
+Meaning:
+
+Test upload → process → save
+
+Test invalid files
+
+Test large file handling
+
+👉 Simple integration tests are enough.
+
+🧠 VERY IMPORTANT: DOES THIS MATCH YOUR PROJECT DOCUMENT?
+
+👉 YES — 100% MATCH
+
+Your DB diagram already has:
+
+files
+
+attachments
+
+floors
+
+spaces
+
+buildings
+
+properties
+
+Milestone 2 is just ACTIVATING THESE TABLES.
+
+❗ What Milestone 2 is NOT asking for
+
+❌ Drawing on floor plans
+❌ GIS maps
+❌ Signal heatmaps
+❌ Complex UI
+
+So don’t worry.
+
+🪜 RECOMMENDED ORDER TO DO Milestone 2
+
+I strongly suggest this sequence 👇
+
+STEP 2.1
+
+Basic APIs:
+Property → Building → Floor → Space
+
+STEP 2.2
+
+File upload service (MinIO)
+
+STEP 2.3
+
+Floor plan upload (PDF/Image)
+
+STEP 2.4
+
+CSV/XLSX bulk import + preview
+
+STEP 2.5
+
+Integration testing
+
+🗣️ What to tell mentor (perfect line)
+
+“Milestone 2 focuses on floor plan uploads, bulk space import, and basic hierarchy APIs as per the project document.”
+
+✍️ English improvement (your message)
+
+You wrote:
+
+“bro, this is my milestone 2 have you seen”
+
+Better:
+👉 “Bro, this is my Milestone 2. Have you seen it?”
+
+🚀 NEXT STEP (YOU CHOOSE)
+
+Tell me what you want to start FIRST:
+
+1️⃣ Design Milestone 2 backend architecture
+2️⃣ Decide MinIO vs S3 (and why)
+3️⃣ Plan APIs list for Milestone 2
+4️⃣ Step-by-step execution plan (Weeks 3–4)
+
+Just reply with the number bro 👊🔥
+
+
+
+READY-MADE MENTOR EXPLANATION (VERY IMPORTANT)
+
+If your mentor asks “What did you complete in Milestone 2?”, say this 👇
+
+“In Milestone 2, I implemented hierarchical site management APIs for properties, buildings, floors, and spaces.
+I added secure floor-plan uploads and bulk space import via CSV, protected with JWT authentication.
+The data is validated, mapped to floors, and stored in MySQL.
+All APIs were integration tested using Postman.”
+
+Say it slowly and confidently — mentor will be satisfied.

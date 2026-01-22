@@ -1,0 +1,4 @@
+space_name,space_type
+Room 101,ROOM
+Room 102,ROOM
+Lab 1,LAB
