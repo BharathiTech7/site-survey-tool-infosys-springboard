@@ -24,6 +24,7 @@ public class Floor {
         return floorPlanPath;
     }
 
+    
     public void setFloorPlanPath(String floorPlanPath) {
         this.floorPlanPath = floorPlanPath;
     }
