@@ -9,5 +9,4 @@ public class SiteSurveyAuthApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SiteSurveyAuthApplication.class, args);
 	}
-
 }
