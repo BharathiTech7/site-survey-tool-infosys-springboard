@@ -14,10 +14,10 @@ The system follows **real-world ISP workflows**, emphasizing **security, scalabi
 ## 🌐 Live Application Links
 
 - **Frontend (Netlify)**  
-  👉 https://voluble-fudge-e77e26.netlify.app/
+  👉 https://site-survey-tool.netlify.app/
 
 - **Backend (Railway)**  
-  👉 https://site-survey-tool-production.up.railway.app
+  👉 https://site-survey-backend-production.up.railway.app/
 
 ---
 
